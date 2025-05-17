@@ -1,3 +1,5 @@
+import os
+import subprocess
 import streamlit as st
 import pickle
 import nltk
