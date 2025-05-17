@@ -6,10 +6,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 from PIL import Image
 
-try:
-    nltk.data.find('tokenizers/punkt')
-except LookupError:
-    nltk.download('punkt')  # Download the punkt tokenizer
+# Download NLTK data at the start
+nltk.download('punkt', quiet=True)
 # Custom CSS for styling
 st.markdown("""
 <style>
